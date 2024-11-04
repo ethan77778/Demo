@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 DateTime dateTime= DateTime.Now;
-string now = dateTime.ToString("yyyyMMdd HH:mm:ss.fff");
+int year = dateTime.Year - 1911;
+string now = year.ToString("000")+dateTime.ToString("MMdd HH:mm:ss.fff");
 Console.WriteLine(now);
